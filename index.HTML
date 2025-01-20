@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveRo Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="Assets/Css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white ">
+      <div class="container">
+        <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="145" height="29"
+            viewBox="0 0 145 29" fill="none">
+            <path
+              d="M27.7111 28.3556V10.8825C27.7111 9.14427 29.131 7.73334 30.8803 7.73334H40.9387C41.3179 7.73334 41.6832 7.89561 41.924 8.18715C43.3024 9.85112 42.1288 12.2307 40.5207 12.2307H32.2496V28.3556H27.7138H27.7111Z"
+              fill="#02333A" />
+            <path
+              d="M99.8889 28.3556V10.8825C99.8889 9.14427 101.247 7.73334 102.92 7.73334H112.541C112.904 7.73334 113.254 7.89561 113.484 8.18715C114.802 9.85112 113.68 12.2307 112.142 12.2307H104.23V28.3556H99.8916H99.8889Z"
+              fill="#02333A" />
+            <path
+              d="M25.1306 13.9349C25.2498 21.1043 20.9097 28.3556 11.0563 28.3556H0V0H11.059C20.7092 0 25.0114 6.92651 25.1333 13.9349H25.1306ZM5.2667 23.2112H11.0563C17.45 23.2112 19.9831 18.5116 19.8612 13.894C19.742 9.47823 17.1683 5.06252 11.0563 5.06252H5.2667V23.2112Z"
+              fill="#02333A" />
+            <path
+              d="M50.2667 2.87264C50.2667 6.70282 44.4667 6.70282 44.4667 2.87264C44.4667 -0.957545 50.2667 -0.957545 50.2667 2.87264ZM44.9091 8.39516V28.3556H49.8243V8.39787H44.9091V8.39516Z"
+              fill="#02333A" />
+            <path
+              d="M74.7556 8.37781L66.4348 28.3556H61.2053L52.8445 8.37781H58.114L60.8075 14.9421L63.8187 23.3191L66.7899 15.0235L69.4834 8.37781H74.7529H74.7556Z"
+              fill="#02333A" />
+            <path
+              d="M81.1072 19.5403C81.4294 22.0294 83.5573 23.8255 87.0146 23.8255C88.8231 23.8255 91.1948 23.1324 92.3183 21.9469L95.4534 25.0907C93.3634 27.2938 89.9494 28.3555 86.9334 28.3555C80.1028 28.3555 76.0444 24.0703 76.0444 17.6204C76.0444 11.1706 80.1434 7.08887 86.5733 7.08887C93.0033 7.08887 97.3432 11.2531 96.5797 19.5403H81.1099H81.1072ZM91.877 15.4173C91.5548 12.8044 89.546 11.4979 86.7331 11.4979C84.0799 11.4979 81.9113 12.8044 81.1884 15.4173H91.877Z"
+              fill="#02333A" />
+            <path
+              d="M145 18.0444C145 23.7434 141.1 28.3556 134.67 28.3556C128.24 28.3556 124.378 23.7407 124.378 18.0444C124.378 12.3482 128.316 7.73334 134.629 7.73334C140.943 7.73334 145 12.3887 145 18.0444ZM129.283 18.0444C129.283 21.0534 131.092 23.8624 134.67 23.8624C138.248 23.8624 140.057 21.0534 140.057 18.0444C140.057 15.0355 137.966 12.186 134.67 12.186C131.133 12.186 129.283 15.076 129.283 18.0444Z"
+              fill="#02333A" />
+            <path
+              d="M123.733 28.3528H118.006L109.078 17.4439C108.798 17.1033 108.645 16.6727 108.645 16.2258C108.645 15.1847 109.463 14.3399 110.471 14.3399H112.711C115.966 14.3399 117.927 12.4759 117.927 9.35829C117.927 6.24067 115.966 4.37665 112.711 4.37665H99.8889V0H112.75C118.631 0 122.475 3.72805 122.475 9.35829C122.475 14.0565 119.771 17.4167 115.378 18.3896L123.731 28.3556L123.733 28.3528Z"
+              fill="#02333A" />
+          </svg></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="Pages/index1.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Pages/index2.html">Our services</a></li>
+            <li class="nav-item"><a class="nav-link" href="Pages/index3.html">For business</a></li>
+            <li class="nav-item"><a class="nav-link" href="Pages/index4.html">For chauffeurs</a></li>
+            <li class="nav-item"><a class="nav-link" href="Pages/index5.html">Help</a></li>
+          </ul>
+          <div class="auth-buttons">
+            <a href="Pages/login.html" class="btn btn-login">Log In</a>
+            <a href="Pages/signup.html" class="btn btn-signup">Sign Up</a>
+          </div>
+        </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero-section container position-relative">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h1>
+        Go anywhere <br>
+        with <span><svg xmlns="http://www.w3.org/2000/svg" width="210" height="41" viewBox="0 0 210 41" fill="none">
+            <path
+              d="M40.0682 41V15.7353C40.0682 13.2219 42.1213 11.1818 44.6507 11.1818H59.1944C59.7427 11.1818 60.2709 11.4165 60.6191 11.838C62.6122 14.244 60.9153 17.6847 58.59 17.6847H46.6306V41H40.0722H40.0682Z"
+              fill="#08CC74" />
+            <path
+              d="M144.432 41V15.7353C144.432 13.2219 146.396 11.1818 148.815 11.1818H162.726C163.251 11.1818 163.756 11.4165 164.089 11.838C165.996 14.244 164.373 17.6847 162.148 17.6847H150.709V41H144.436H144.432Z"
+              fill="#08CC74" />
+            <path
+              d="M36.337 20.1488C36.5094 30.5152 30.2338 41 15.9866 41H0V0H15.9905C29.9439 0 36.1646 10.0152 36.3409 20.1488H36.337ZM7.61526 33.5616H15.9866C25.2314 33.5616 28.8941 26.7664 28.7178 20.0896C28.5455 13.7048 24.824 7.32002 15.9866 7.32002H7.61526V33.5616Z"
+              fill="#08CC74" />
+            <path
+              d="M72.6818 4.15361C72.6818 9.69177 64.2954 9.69177 64.2954 4.15361C64.2954 -1.38454 72.6818 -1.38454 72.6818 4.15361ZM64.9351 12.1388V41H72.0421V12.1427H64.9351V12.1388Z"
+              fill="#08CC74" />
+            <path
+              d="M108.091 12.1136L96.0597 41H88.4982L76.4091 12.1136H84.0284L87.9231 21.6051L92.277 33.7176L96.573 21.7228L100.468 12.1136H108.087H108.091Z"
+              fill="#08CC74" />
+            <path
+              d="M117.275 28.2538C117.741 31.8529 120.818 34.4499 125.817 34.4499C128.432 34.4499 131.861 33.4477 133.485 31.7336L138.019 36.2793C134.996 39.4649 130.06 41 125.699 41C115.823 41 109.955 34.8039 109.955 25.4778C109.955 16.1518 115.881 10.25 125.179 10.25C134.476 10.25 140.751 16.2711 139.647 28.2538H117.279H117.275ZM132.847 22.2923C132.381 18.5142 129.477 16.6251 125.41 16.6251C121.573 16.6251 118.438 18.5142 117.392 22.2923H132.847Z"
+              fill="#08CC74" />
+            <path
+              d="M209.659 26.0909C209.659 34.3312 204.02 41 194.723 41C185.425 41 179.841 34.3273 179.841 26.0909C179.841 17.8546 185.535 11.1818 194.664 11.1818C203.793 11.1818 209.659 17.9132 209.659 26.0909ZM186.933 26.0909C186.933 30.4417 189.549 34.5032 194.723 34.5032C199.896 34.5032 202.512 30.4417 202.512 26.0909C202.512 21.7402 199.489 17.62 194.723 17.62C189.608 17.62 186.933 21.7988 186.933 26.0909Z"
+              fill="#08CC74" />
+            <path
+              d="M178.909 40.9961H170.627L157.718 25.2226C157.314 24.73 157.093 24.1074 157.093 23.4612C157.093 21.956 158.275 20.7345 159.733 20.7345H162.971C167.679 20.7345 170.513 18.0392 170.513 13.5314C170.513 9.02355 167.679 6.3283 162.971 6.3283H144.432V0H163.029C171.532 0 177.09 5.39049 177.09 13.5314C177.09 20.3247 173.179 25.1832 166.828 26.5899L178.905 41L178.909 40.9961Z"
+              fill="#08CC74" />
+          </svg></span>
+      </h1>
+    <br>
+    <br>
+      <div class="ride-options">
+        <button class="btn btn-success">Ride</button>
+        <button class="btn btn-light border">by the hours</button>
+      </div>
+      <div class="form-box">
+        <br>
+        <form>
+          <input type="text" class="form-control" placeholder="Pickup Location">
+          <br>
+          <input type="text" class="form-control" placeholder="Dropoff Location">
+          <br>
+          <div class="d-flex gap-3">
+            <input type="date" class="form-control" placeholder="Today">
+            <input type="time" class="form-control" placeholder="Now">
+          </div>
+          <br>
+          <div class="auth-buttons">
+            <a href="Pages/index1.html" class="btn btn-search">Search Now</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-lg-6 d-none d-lg-block hero-image">
+      <img src="Assets/Images/img.png" alt="Hero Illustration">
+    </div>
+  </div>
+</section>
+
+  <!-- Services Section -->
+<section class="container my-5">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <img src="Assets/Images/img1.png" alt="Airport transfers" class="mb-3">
+          <h5 class="card-title">Airport transfers</h5>
+          <p class="card-text">Book your stress-free airport transportation at competitive prices.</p>
+          <a href="Pages/index2.html" class="btn btn-learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <img src="Assets/Images/img2.png" alt="Chauffeur by the hour" class="mb-3">
+          <h5 class="card-title">Chauffeur by the hour</h5>
+          <p class="card-text">Hire an hourly chauffeur for your business or leisure needs.</p>
+          <a href="Pages/index3.html" class="btn btn-learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <img src="Assets/Images/img3.png" alt="City rides" class="mb-3">
+          <h5 class="card-title">City rides</h5>
+          <p class="card-text">Get around the city at your convenience, anytime and anywhere, even for long distances.
+          </p>
+          <a href="#" class="btn btn-learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="custom-max-width">
+  <div class="container my-5">
+    <div class="banner d-flex row">
+      <div class="col-md-12 adjust-margin">
+        <h1 class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="234" height="46" viewBox="0 0 234 46"
+            fill="none">
+            <path
+              d="M44.72 46V17.8021C44.72 14.9969 47.0114 12.72 49.8344 12.72H66.0666C66.6785 12.72 67.2682 12.9818 67.6568 13.4523C69.8812 16.1376 67.9873 19.9778 65.3921 19.9778H52.0442V46H44.7244H44.72Z"
+              fill="#08CC74" />
+            <path
+              d="M161.2 46V17.8021C161.2 14.9969 163.392 12.72 166.092 12.72H181.618C182.204 12.72 182.768 12.9818 183.139 13.4523C185.267 16.1376 183.456 19.9778 180.973 19.9778H168.206V46H161.204H161.2Z"
+              fill="#08CC74" />
+            <path
+              d="M40.5556 22.728C40.748 34.2979 33.7439 46 17.8426 46H0V0.23999H17.8469C33.4204 0.23999 40.3633 11.4179 40.56 22.728H40.5556ZM8.49937 37.698H17.8426C28.1607 37.698 32.2486 30.1139 32.0519 22.662C31.8595 15.5359 27.706 8.40985 17.8426 8.40985H8.49937V37.698Z"
+              fill="#08CC74" />
+            <path
+              d="M81.12 4.87583C81.12 11.0569 71.76 11.0569 71.76 4.87583C71.76 -1.30529 81.12 -1.30529 81.12 4.87583ZM72.4739 13.788V46H80.4061V13.7924H72.4739V13.788Z"
+              fill="#08CC74" />
+            <path
+              d="M120.64 13.76L107.212 46H98.7727L85.28 13.76H93.784L98.1308 24.3534L102.99 37.8721L107.785 24.4848L112.132 13.76H120.636H120.64Z"
+              fill="#08CC74" />
+            <path
+              d="M130.89 31.774C131.41 35.791 134.844 38.6895 140.424 38.6895C143.342 38.6895 147.169 37.5709 148.983 35.6578L154.042 40.7313C150.669 44.2867 145.16 46 140.293 46C129.269 46 122.72 39.0845 122.72 28.6758C122.72 18.267 129.335 11.68 139.711 11.68C150.088 11.68 157.092 18.4002 155.86 31.774H130.895H130.89ZM148.27 25.1204C147.751 20.9036 144.509 18.7952 139.969 18.7952C135.687 18.7952 132.188 20.9036 131.021 25.1204H148.27Z"
+              fill="#08CC74" />
+            <path
+              d="M234 29.36C234 38.5569 227.706 46 217.329 46C206.953 46 200.72 38.5525 200.72 29.36C200.72 20.1674 207.075 12.72 217.264 12.72C227.452 12.72 234 20.2328 234 29.36ZM208.636 29.36C208.636 34.2158 211.555 38.7489 217.329 38.7489C223.103 38.7489 226.023 34.2158 226.023 29.36C226.023 24.5041 222.649 19.9056 217.329 19.9056C211.621 19.9056 208.636 24.5695 208.636 29.36Z"
+              fill="#08CC74" />
+            <path
+              d="M199.68 45.9956H190.437L176.029 28.3909C175.578 27.8411 175.331 27.1463 175.331 26.425C175.331 24.745 176.651 23.3817 178.277 23.3817H181.892C187.146 23.3817 190.309 20.3735 190.309 15.3423C190.309 10.3111 187.146 7.30299 181.892 7.30299H161.2V0.23999H181.956C191.446 0.23999 197.649 6.2563 197.649 15.3423C197.649 22.9243 193.285 28.3469 186.196 29.9169L199.676 46L199.68 45.9956Z"
+              fill="#08CC74" />
+          </svg></h1>
+        <br>
+        <p>Get instant 10% back on Driverro Cars</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="container my-5">
+    <div class="row align-items-center rounded-4 p-4" style="background-color: transparent;">
+      <div class="col-md-6">
+        <h2 class="text-success" style="font-weight: 700; color: #02333A; font-size: 35px">Easy online booking</h2>
+        <p class="text-dark" style="font-size: 18px;">
+          Enjoy a hassle-free journey by booking your private chauffeur online—quick, simple,
+          and ready whenever you are. Your ride, your rules, just a few clicks away.
+        </p>
+        <a href="Pages/index4.html" class="btn btn-success">Learn More</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="Assets/Images/img6.png" alt="Easy online booking" style="padding-left: 120px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row align-items-center rounded-4 p-4" style="background-color: transparent;">
+      <div class="col-md-6 text-center">
+        <img src="Assets/Images/img7.png" alt="Clear Price" style="padding-right: 160px;">
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-success" style="font-weight: bold; color: black; font-size: 35px">Clear Price</h2>
+        <p class="text-dark" style="font-size: 18px;">
+          At Driverro, select your ideal ride and enjoy instant booking confirmation.
+          Our transparent pricing policy guarantees no hidden fees—what you see is what you pay,
+          ensuring a seamless travel experience.
+        </p>
+        <a href="Pages/index5.html" class="btn btn-success">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row align-items-center rounded-4 p-4" style="background-color: transparent;">
+      <div class="col-md-6">
+        <h2 class="text-success" style="font-weight: bold; color: black; font-size: 35px"">Clear Price</h2>
+          <p class=" text-dark" style="font-size: 18px;">
+          At Driverro, select your ideal ride and enjoy instant booking confirmation.
+          Our transparent pricing policy guarantees no hidden fees—what you see is what you pay,
+          ensuring a seamless travel experience.
+          </p>
+          <a href="Pages/index3.html" class="btn btn-success">Learn More</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="Assets/Images/img8.png" alt="Clear Price" style="padding-left: 120px;">
+      </div>
+    </div>
+  </div>
+
+<section class="safety">
+  <div class="container">
+    <div class="row">
+      <h2>Maximum comfort and safety of your trip</h2>
+      <p>Experience seamless travel with our meet-and-greet service,
+        provided with a complimentary one-hour wait time and efficient flight tracking for a stress-free journey.
+        Enjoy the convenience at no extra cost.</p>
+    </div>
+    <div class="row box-wrapper">
+      <div class="col-md-4 container-box">
+        <img src="Assets/Images/taxi01.png" alt="Economy Taxi">
+        <h6>Economy Taxi</h6>
+        <p>Up to 3 Passengers</p>
+      </div>
+      <div class="col-md-4 container-box">
+        <img src="Assets/Images/taxi02.png" alt="Standard Class">
+        <h6>Standard Class</h6>
+        <p>Up to 3 Passengers</p>
+      </div>
+      <div class="col-md-4 container-box">
+        <img src="Assets/Images/taxi03.png" alt="First Class">
+        <h6>First Class</h6>
+        <p>Up to 3 Passengers</p>
+      </div>
+    </div>
+    <div class="row box-wrapper">
+      <div class="col-md-4 container-box">
+        <img src="Assets/Images/taxi04.png" alt="SUV">
+        <h6>SUV</h6>
+        <p>Up to 3 Passengers</p>
+      </div>
+      <div class="col-md-4 container-box">
+        <img src="Assets/Images/taxi05.png" alt="Van Standard">
+        <h6>Van Standard</h6>
+        <p>Up to 3 Passengers</p>
+      </div>
+      <div class="col-md-4 container-box">
+      <img src="Assets/Images/taxi06.png" alt="Minibus">
+        <h6>Minibus</h6>
+        <p>Up to 3 Passengers</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="container centered-layout">
+    <h1>How does it work</h1>
+    <div class="steps">
+      <!-- Add the SVG for curved lines -->
+      <svg class="curved-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200">
+        <path d="M150 100 Q300 50 450 100 T750 100" />
+      </svg>
+
+      <div class="step">
+        <div class="step-icon">
+          <img src="Assets/Images/image1.png" alt="Car Icon">
+        </div>
+        <div class="step-title">Enter your route & select car</div>
+        <div class="step-description">
+          Enter all the required data in the search field and then choose the desired vehicle.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-icon st">
+          <img src="Assets/Images/image2.png" alt="Form Icon">
+        </div>
+        <div class="step-title">Complete booking form</div>
+        <div class="step-description">
+          Enter the details of the lead passenger, add extras if you wish. Proceed to payment and receive your voucher.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-icon">
+          <img src="Assets/Images/image3.png" alt="Driver Icon">
+        </div>
+        <div class="step-title">Meet your driver</div>
+        <div class="step-description">
+          You will receive your driver's details 6 hours prior to pickup and he will be waiting for you on-site with a
+          Name Sign.
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+  <div class="demo-container">
+    <div class="demo-content">
+      <h1>Get a demo with our expert</h1>
+      <button class="demo-button">Learn More</button>
+      <img class="car-img" src="Assets/Images/car.png" alt="Car Image" />
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<section class="stellar-card">
+  <h1>Book a private transfer at over
+    <br> 1500 airports, stations & ports worldwide</h1>
+  <br>
+  <div class="neo-frame">
+    <div class="quark-box">
+      <div class="card-content">
+        <h2>Burj Khalifa</h2>
+        <p>Experience seamless travel with our meet-and-greet service.</p>
+        <button>Booking Now</button>
+      </div>
+    </div>
+    <div class="quark-box">
+      <div class="card-content">
+        <h2>Burj al Arab</h2>
+        <p>Experience seamless travel with our meet-and-greet service.</p>
+        <button>Booking Now</button>
+      </div>
+    </div>
+    <div class="quark-box">
+      <div class="card-content">
+        <h2>Dubai Fountain</h2>
+        <p>Experience seamless travel with our meet-and-greet service.</p>
+        <button>Booking Now</button>
+      </div>
+    </div>
+    <div class="quark-box">
+      <div class="card-content">
+        <h2>Palm Jumeirah</h2>
+        <p>Experience seamless travel with our meet-and-greet service.</p>
+        <button>Booking Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+<br>
+
+<footer>
+  <div class="footer-container">
+    <div class="subscribe">
+      <p>Subscribe to see secret deals prices
+        <br> drop the moment you sign up!
+      </p>
+      <form>
+        <input type="email" placeholder="Enter Your Email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <br>
+    </div>
+    <div class="footer-content">
+      <div class="company-info">
+        <svg xmlns="http://www.w3.org/2000/svg" width="149" height="29" viewBox="0 0 149 29" fill="none">
+          <g clip-path="url(#clip0_307_872)">
+            <path
+              d="M28.6674 28.4736V11.1434C28.6674 9.41942 30.0776 8.02002 31.8151 8.02002H41.8052C42.1818 8.02002 42.5447 8.18096 42.7839 8.47012C44.1529 10.1205 42.9873 11.9891 41.3901 11.9891H32.67V28.4736H28.6701H28.6674Z"
+              fill="#07CC74" />
+            <path
+              d="M102.362 28.4736V11.1434C102.362 9.41942 103.772 8.02002 105.51 8.02002H115.5C115.876 8.02002 116.239 8.18096 116.478 8.47012C117.847 10.1205 116.682 11.9891 115.085 11.9891H106.365V28.4736H102.365H102.362Z"
+              fill="#07CC74" />
+            <path
+              d="M25.5004 14.0594C25.6214 21.2255 21.2174 28.4734 11.219 28.4734H0V0.130859H11.2217C21.0139 0.130859 25.3795 7.0542 25.5032 14.0594H25.5004ZM5.34421 23.3314H11.219C17.7068 23.3314 20.2772 18.634 20.1535 14.0185C20.0325 9.60476 17.4209 5.19106 11.219 5.19106H5.34421V23.3314Z"
+              fill="#07CC74" />
+            <path
+              d="M51.8201 2.88326C51.8201 6.72956 45.9453 6.72956 45.9453 2.88326C45.9453 -0.963039 51.8201 -0.963039 51.8201 2.88326ZM46.3934 8.42902V28.4734H51.372V8.43175H46.3934V8.42902Z"
+              fill="#07CC74" />
+            <path
+              d="M76.7075 8.47266L68.1386 28.5552H62.7532L54.1431 8.47266H59.5697L62.3436 15.0714L65.4445 23.4923L68.5042 15.1532L71.2781 8.47266H76.7047H76.7075Z"
+              fill="#07CC74" />
+            <path
+              d="M83.3603 20.2543C83.6874 22.7231 85.8482 24.5044 89.3587 24.5044C91.1951 24.5044 93.6033 23.8169 94.7442 22.6412L97.9276 25.7592C95.8053 27.9442 92.3387 28.9972 89.2763 28.9972C82.3403 28.9972 78.2195 24.7472 78.2195 18.3503C78.2195 11.9534 82.3816 7.90527 88.9106 7.90527C95.4397 7.90527 99.8465 12.0353 99.0712 20.2543H83.363H83.3603ZM94.2961 16.1653C93.9689 13.5738 91.9291 12.2781 89.0728 12.2781C86.3787 12.2781 84.1767 13.5738 83.4427 16.1653H94.2961Z"
+              fill="#07CC74" />
+            <path
+              d="M149 18.514C149 24.2643 145.041 28.9181 138.515 28.9181C131.989 28.9181 128.068 24.2616 128.068 18.514C128.068 12.7663 132.066 8.10986 138.474 8.10986C144.882 8.10986 149 12.8073 149 18.514ZM133.047 18.514C133.047 21.5501 134.883 24.3843 138.515 24.3843C142.147 24.3843 143.983 21.5501 143.983 18.514C143.983 15.4778 141.861 12.6027 138.515 12.6027C134.925 12.6027 133.047 15.5188 133.047 18.514Z"
+              fill="#07CC74" />
+            <path
+              d="M127.189 28.4735H121.221L111.918 17.5539C111.626 17.2129 111.467 16.7819 111.467 16.3345C111.467 15.2925 112.319 14.4468 113.369 14.4468H115.703C119.096 14.4468 121.138 12.581 121.138 9.46028C121.138 6.3396 119.096 4.47373 115.703 4.47373H102.343V0.0927734H115.744C121.872 0.0927734 125.878 3.8245 125.878 9.46028C125.878 14.1631 123.06 17.5266 118.482 18.5005L127.186 28.4763L127.189 28.4735Z"
+              fill="#07CC74" />
+          </g>
+          <defs>
+            <clipPath id="clip0_307_872">
+              <rect width="149" height="29" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <br>
+        <br>
+        <p>12345 Oakwood Drive, Suite 88, San Francisco<br>California 94111, US</p>
+        <p>Hours: 8:00 - 17:00, Mon - Sat</p>
+        <p>Support: support@carento.com</p>
+        <p>Need help? Call Us<br><a href="tel:+12344567890">+1 234-456-78-90</a></p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li>How Driverro works</li>
+            <li>Career</li>
+            <li>Press</li>
+            <li>Blog</li>
+            <li>Green initiatives</li>
+            <li>Become a chauffeur partner</li>
+            <li>Influencers</li>
+          </ul>
+        </div>
+        <div>
+          <h3>For Our Business</h3>
+          <ul>
+            <li>Overview</li>
+            <li>Corporations</li>
+            <li>Travel agencies</li>
+            <li>Strategic partnerships</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li>City-to-city rides</li>
+            <li>Limousine service</li>
+            <li>Chauffeur service</li>
+            <li>Private car service</li>
+            <li>Ground transportation</li>
+            <li>Airport transfer</li>
+            <li>All countries</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Top Cities</h3>
+          <ul>
+            <li>New York</li>
+            <li>London</li>
+            <li>Berlin</li>
+            <li>Los Angeles</li>
+            <li>Paris</li>
+            <li>All cities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Driverro. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#">F</a>
+        <a href="#">T</a>
+        <a href="#">Y</a>
+        <a href="#">L</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
